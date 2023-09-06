@@ -1,19 +1,23 @@
 <?php
 
-function my_str_reverse(string $string): string {
-    $reverse = '';
+function my_str_reverse(string $string) : string {
+    $reversedString = '';
     $i = 0;
-    
-    while (!empty($string[$i])) { 
-        $reverse = $string[$i] . $reverse; 
+
+    while (isset($string[$i])) {
         $i++;
     }
 
-    return $reverse;
+    while ($i >= 0) {
+        if (isset($string[$i])) {
+            $reversedString .= $string[$i];
+        }
+        $i--;
+    }
+
+    return $reversedString;
 }
 
-$inputString = 'Hello';
-$reversedString = my_str_reverse($inputString);
-echo $reversedString;
+echo my_str_reverse('Hello');
 
 ?>

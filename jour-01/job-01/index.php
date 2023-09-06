@@ -18,6 +18,6 @@ $haystack = 'La Plateforme';
 $needle = 'a';
 
 $n = my_str_search($needle, $haystack);
-echo "Letter '$needle' appears $n times in $haystack";
 
-?>
+$result = "my_str_search('$haystack', '$needle') === $n;";
+echo $result;

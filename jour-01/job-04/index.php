@@ -20,8 +20,6 @@ function my_fizz_buzz(int $length): array {
 
 $fizzBuzzArray = my_fizz_buzz(15);
 
-foreach ($fizzBuzzArray as $value) {
-    echo $value . "<br>";
-}
+echo "my_fizz_buzz(15) === [" . implode(', ', $fizzBuzzArray) . "];";
 
 ?>

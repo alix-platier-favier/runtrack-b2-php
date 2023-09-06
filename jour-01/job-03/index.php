@@ -15,16 +15,10 @@ $number2 = 15;
 $multiple2 = 7;
 $isMultiple2 = my_is_multiple($number2, $multiple2);
 
-if ($isMultiple1) {
-    echo "$number1 is a multiple of $multiple1.<br>";
-} else {
-    echo "$number1 isn't a multiple of $multiple1.<br>";
-}
+$result1 = $isMultiple1 ? 'true' : 'false';
+$result2 = $isMultiple2 ? 'true' : 'false';
 
-if ($isMultiple2) {
-    echo "$number2 is a multiple of  $multiple2.<br>";
-} else {
-    echo "$number2 is not a multiple of $multiple2.<br>";
-}
+echo "my_is_multiple($number1, $multiple1) === $result1;<br>";
+echo "my_is_multiple($number2, $multiple2) === $result2;<br>";
 
 ?>
